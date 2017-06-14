@@ -1,0 +1,313 @@
+/* Main Styles 
+-----------------------------------------------------------*/
+body
+{
+    background-color: #CEBF9F;
+    font-size: .8em;
+    font-family: Segoe UI, Tahoma, Verdana;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+a:link, a:visited
+{
+    color: #800000;
+}
+
+h1, h2, h3, h4, h5
+{
+    font-family: Segoe UI, Tahoma, Verdana;
+    color: #009900;
+    font-weight: normal;
+}
+
+/* Primary layout 
+-----------------------------------------------------------*/
+#page
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header
+{
+    background-color: #332822;
+    min-height: 120px;
+    color: White;
+}
+
+#title
+{
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+#logindisplay
+{
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+    display: block;
+    font-size: 1.1em;
+}
+
+#logindisplay a
+{
+    text-decoration: none;
+    color: White;
+}
+
+#menuContainer
+{
+    width: 720px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1em;
+}
+
+#menu
+{
+    padding: 0;
+    margin: 0;
+    display: block;
+    list-style: none outside none;
+}
+
+#menu li
+{
+    margin-bottom: 0;
+    padding-bottom: 1px;
+    float: left;
+    white-space: nowrap;
+    padding-right: 20px;
+}
+
+#menu li a
+{
+    text-decoration: none;
+    color: White;
+}
+
+#main
+{
+    width: 720px;
+    background-color: White;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
+
+#mainContents
+{
+    padding: 10px;
+}
+
+
+#footer
+{
+    background-color: #574E44;
+}
+
+#footerContents
+{
+    width: 720px;
+    color: #ddd;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0;
+    font-size: 0.9em;
+    padding-right: 10px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.errorMessage
+{
+    color: red;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+}
+
+.validation-summary-errors
+{
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+.validation-summary-errors ul
+{
+    list-style: none outside none;
+    margin: 5;
+    padding-left: 10px;
+}
+
+#form
+{
+    background-color: #EBE4D8;
+    width: 400px;
+    padding: 10px;
+}
+
+.editor-field, .display-field
+{
+    font-family: Segoe UI, Tahoma, Verdana, Arial;
+    font-size: 1.2em;
+}
+
+.editor-field textarea, .editor-field input
+{
+    font-size: 1em;
+}
+
+.editor-label, .display-label
+{
+    padding-top: 8px;
+    padding-bottom: 1px;
+    font-weight: bold;
+}
+
+.actions-region
+{
+    margin-top: 15px;
+}
+.actions-region a
+{
+    font-family: Tahoma, Verdana, Arial;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/*Buttons*/
+.btnNeutral, .actions-region a
+{
+    cursor: hand;
+    padding: 4px 12px 3px 12px;
+    width: 120px;
+    cursor: pointer;
+    overflow: visible;
+}
+
+.btnNeutral, .actions-region a
+{
+    background-position: left bottom;
+    background-image: url(../Images/NeutralButton.gif);
+    background-repeat: repeat-x;
+    color: #000;
+    background-color: #CCCCCC;
+    border-right: 1px solid #184979;
+    border-bottom: 1px solid #184979;
+    border-left: 1px solid #7daddb;
+    border-top: 1px solid #7daddb;
+    border-color: #CCCCCC #999999 #999999 #CCCCCC;
+}
+
+.table-list
+{
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-list th
+{
+    font-size: 9pt !important;
+    border-bottom: 2px solid #6678B1;
+    text-align: left;
+}
+
+.table-list .sort_asc
+{
+    background-image: url('../Images/sort_asc.gif');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 15px;
+}
+
+.table-list .sort_desc
+{
+    background-image: url('../Images/sort_desc.gif');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 15px;
+}
+
+.table-list .gridrow_alternate
+{
+    background-color: #eee;
+}
+
+.table-list .tr-item
+{
+    background-color: #fff;
+}
+
+.table-list td
+{
+    padding: 5px;
+}
+#searchFilter
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E9E9E9 #CCCCCC #CCCCCC #E9E9E9;
+    background-color: #BFDFFF;
+    padding: 10px;
+    background: -moz-linear-gradient(top, #BFDFFF, #F0F8FF);
+    background: -webkit-gradient(linear, left top, left bottom, from(#BFDFFF), to(#F0F8FF));
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#BFDFFF', EndColorStr='#F0F8FF');
+}
+#searchFilter div
+{
+    float: left;
+    padding: 5px;
+}
+#searchFilter label
+{
+    display: block;
+    padding-top: 5px;
+    font-size: 0.9em;
+}
+#searchFilter span
+{
+    clear: both;
+    display: block;
+    padding-top: 5px;
+}
+
+.pagination
+{
+    clear: both;
+    border: 1px solid #A2C1A2;
+    padding: 5px;
+    background-color: #D5E3D5;
+}
+
+#detailsContainer
+{
+    padding: 10px;
+}

@@ -1,0 +1,27 @@
+Sizzle, Qwery :
+	deux bibliothèques conçues pour fonctionner de la même 
+	manière que la méthode querySelector(), ce type de bibliothèques est 
+	d'ailleurs à l'origine de l'implémentation officielle de la méthode en 
+	question. La première est le moteur de sélection du framework jQuery 
+	mais est relativement lourde, la seconde a l'avantage d'être 
+	particulièrement légère et un poil plus rapide en terme d'exécution. 
+
+Popcorn.js :
+	une bibliothèque permettant une manipulation aisée des 
+	balises <audio> et <video>, il devient ainsi très simple d'interagir 
+	avec ces balises afin de mettre en place des sous-titres, des 
+	commentaires placés à un moment précis de la piste audio ou vidéo, etc. 
+
+Raphaël, Three.js :
+	trois bibliothèques spécialisées dans le graphisme. 
+	La première fonctionne exclusivement avec les images SVG et la deuxième 
+	s'est spécialisée dans la 3D et gère à la fois SVG, <canvas> et surtout 
+	la bibliothèque WebGL, qui sait tirer parti du moteur OpenGL ! 
+
+Modernizr :
+	comme vous le savez si bien, les langages Web sont plus ou 
+	moins bien supportés selon les navigateurs, surtout quand il s'agit de 
+	fonctionnalités récentes ! Cette bibliothèque a pour but de vous aider à 
+	détecter la présence de telle ou telle fonctionnalité, il ne vous 
+	restera alors plus qu'à fournir un script résolvant ce problème (un 
+	polyfill) ou exploitant une solution alternative. 

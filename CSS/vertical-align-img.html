@@ -1,0 +1,30 @@
+<!-- src : http://stackoverflow.com/a/7310398/1655155 -->
+
+<style>
+	.frame {
+		height: 25px;      /* equals max image height */
+		width: 160px;
+		border: 1px solid red;
+		white-space: nowrap;
+		
+		text-align: center; margin: 1em 0;
+	}
+
+	.helper {
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+
+	img {
+		background: #3A6F9A;
+		vertical-align: middle;
+		max-height: 25px; /* pas obligatoire */
+		max-width: 160px; /* on peut aussi utiliser : max-width: 99%; */
+	}
+</style>
+
+<div class=frame>
+    <span class="helper"></span>
+	<img src="http://jsfiddle.net/img/logo.png" height=250 />
+</div>

@@ -1,0 +1,1 @@
+Pour importer des image en taille réelle, utiliser une résolution de 96 ppi/ppp

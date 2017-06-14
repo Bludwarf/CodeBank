@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" ViewStateMode="Disabled" EnableViewState="false" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="../../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <script src="../../Scripts/Common.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="page">
+        <div id="header">
+            <div id="title">
+                <img alt="Northwind Sales" src="../../Images/NorthwindSalesBanner.png"
+                    style="width: 400px; height: 98px" />
+                <div id="logindisplay">
+                </div>
+            </div>
+            <div id="menuContainer">
+                <% Html.RenderPartial("Menu"); %>
+            </div>
+        </div>
+        <div id="main">
+            <div id="mainContents">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footerContents">
+                Northwind Traders<br />
+                © Copyright 1900-3000 All rights reserved.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

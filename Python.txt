@@ -1,0 +1,2 @@
+Formatter des secondes (float) en hh:mm:ss.SSS
+'{:02d}:{:02d}:{:02d}.{:03d}'.format(int(s // 3600), int(s % 3600 // 60), int(s % 60), int(round(s % 1 * 1000)))

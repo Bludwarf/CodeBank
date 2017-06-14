@@ -1,0 +1,13 @@
+Une servlet renvoie toujours 404 :
+
+Pour vérifier si la servlet est bien démarrer utiliser une distrib locale de Tomcat. Copier le WAR dans le répertoire webapps puis lancer bin\startup.bat.
+Une fois Tomcat démarrer aller à l'URL http://localhost:8080/manager et vérifier que l'appli (exemple "exs-simu") démarre bien.
+Si ce n'est pas le cas, cliquer sur Démarrer et observer la fenêtre de commande dans laquelle Tomcat a été démarrée. Vous devriez voir des logs.
+
+Exemple le 29/08/2016 : la librairie "commons-digester" n'a pas été inclue dans le WAR parce qu'elle était indiquée comme lib de test dans le pom.xml du projet parent.
+
+	log : 	17:48:48 ERROR - work.web.context.ContextLoader l.215 ebApplicationContext - Context initialization failed org.springframework.beans.factory.BeanCreationException:
+		Error creating bean with name 'simuConfiguration' defined in ServletContext resource [/WEB-INF/applicationContext.xml]:
+		Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1)are:PropertyAccessException 1:
+		org.springframework.beans.MethodInvocationException:Property 'configFile' threw exception; nested exception is java.lang.NoClassDefFoundError:
+		org/apache/commons/digester/substitution/VariableExpander
