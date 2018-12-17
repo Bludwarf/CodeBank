@@ -14,6 +14,10 @@ Export (exemple pour sauvegarder les assoc fichiers)
 
     reg.exe export "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts" "D:\Presets\Windows\FileExts.reg"
     
+## Nettoyer le menu contextuel (clic-droit)
+
+    HKEY_CLASSES_ROOT\Directory\background\shellex\ContextMenuHandlers
+    
     
 # Services
 

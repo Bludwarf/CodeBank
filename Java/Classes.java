@@ -23,3 +23,4 @@
 		}
 		return genClasses;
 	}
+  // Pour une variable, il est impossible de connaitre son type générique à cause du Type Erasure de Java
