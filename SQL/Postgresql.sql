@@ -4,4 +4,10 @@ WITH temp AS (
   FROM table
 )
 SELECT *
-FROM temp
+FROM temp;
+
+-- DELETE + JOIN
+DELETE 
+FROM deleted_table D
+USING joined_table J
+WHERE D.m_product_id = J.m_product_id;
