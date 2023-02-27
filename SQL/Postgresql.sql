@@ -15,9 +15,9 @@ WHERE D.m_product_id = J.m_product_id;
 
 -- UPDATE + JOIN
 UPDATE A
-SET A.c1 = expresion
+SET old_value = B.new_value
 FROM B
-WHERE A.c2 = B.c2;
+WHERE A.id = B.id;
 
 -- JOIN avec "table constante"
 JOIN (VALUES
