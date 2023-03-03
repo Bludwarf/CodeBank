@@ -1,2 +1,0 @@
-REM Copie de la structure d'un dossier
-XCopy "src" "dest" /T /E
