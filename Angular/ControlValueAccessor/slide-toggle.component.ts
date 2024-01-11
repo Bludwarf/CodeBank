@@ -21,7 +21,7 @@ export class SlideToggleComponent implements ControlValueAccessor {
   @Input()
   formControl: FormControl;
 
-  @ViewChild(FormControlDirective)
+  @ViewChild(FormControlDirective, {static: true})
   formControlDirective: FormControlDirective;
 
   constructor(
