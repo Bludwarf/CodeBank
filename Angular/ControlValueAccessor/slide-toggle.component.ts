@@ -18,8 +18,8 @@ export class SlideToggleComponent implements ControlValueAccessor {
   @Input()
   formControlName: string;
 
-  @Input('formControl')
-  inputFormControl: FormControl;
+  @Input()
+  formControl: FormControl;
 
   @ViewChild(FormControlDirective)
   formControlDirective: FormControlDirective;
@@ -29,8 +29,8 @@ export class SlideToggleComponent implements ControlValueAccessor {
   ) {
   }
 
-  get formControl(): FormControl {
-    return this.inputFormControl || this.controlContainer.control.get(this.formControlName) as FormControl;
+  get angularFormControl(): FormControl {
+    return this.formControl || this.controlContainer.control.get(this.formControlName) as FormControl;
   }
 
   registerOnChange(fn: any): void {
