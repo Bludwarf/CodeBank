@@ -33,7 +33,7 @@ export class SlideToggleComponent implements ControlValueAccessor {
     return this.formControl || this.controlContainer.control.get(this.formControlName) as FormControl;
   }
 
-  registerOnChange(fn: any): void {
+  registerOnChange(fn: (_: any) => void): void {
     this.formControlDirective.valueAccessor.registerOnChange(fn);
   }
 
